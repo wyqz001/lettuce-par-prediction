@@ -24,18 +24,35 @@ Variables include:
 1. Data loading and inspection  
 2. Data visualization  
 3. Linear regression modeling  
-4. Growth simulation  
-5. Harvest timing prediction  
+4. Model evaluation  
+5. Growth simulation and harvest prediction  
 
 ---
 
-## Example Insight
+## Key Idea
 
-The regression model estimates daily lettuce growth using:
+Lettuce growth depends mainly on two factors:
+
+- available light (PAR)
+- plant size (weight)
+
+The regression model estimates daily growth using:
 
 growth = a × PAR + b × weight + c
 
-This allows simulation of harvest timing under different light conditions.
+---
+
+## Example Simulation
+
+Starting from a plant weight of **200 g**, the model predicts how many days are needed to reach the harvest weight (**250 g**) under different PAR scenarios.
+
+For example:
+
+- continuous sunny days
+- rainy days followed by sunshine
+- multiple cloudy days
+
+This allows simple harvest forecasting based on expected weather conditions.
 
 ---
 
